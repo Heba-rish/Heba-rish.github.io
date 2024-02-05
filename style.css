@@ -210,6 +210,11 @@
       top: 0;
       animation: slide 12s steps(4) infinite;
   }
+  @keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
   .dynamic-txts li span{
       position: relative;
       margin: 5px 0;
@@ -228,7 +233,18 @@
       top:-5px;
   }
 
-  .CV{
+
+  @keyframes typing {
+    40%, 60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
+  
+.CV{
     font-weight:900;
     padding:10%;
     text-wrap:nowrap;
