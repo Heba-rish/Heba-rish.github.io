@@ -59,8 +59,6 @@
 
     .bar{
       margin-top: 20px ;
-      margin-left: 10px;
-
     }
 
 
@@ -86,5 +84,154 @@
     }
  
 
+    /*container covering all following sectoins*/
+    .sections-big-container{
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top:70px; /*seperate sections from navbar*/
+  }
 
-    
+
+  /* Home section style */
+  .Home-section{
+      width:85%;
+      padding:2% 0%;
+      margin-left: 200px  ;
+      background-color:silver;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 69% 88%, 0 100%);
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      z-index: 7;
+      margin-bottom: -100px;
+  }
+
+  .Home-section-content{
+      width:80%;
+      margin:auto;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:row;
+      /* border: 1px solid black; */
+      
+      /* purpose of the following is to avoid polygon edges */
+      padding: 4%;
+      bottom:30px;
+      transition: all 2s ease;
+      
+  }
+
+  .Home-section-content-text{
+      width:auto;
+      left:5%;
+      /* border: 1px solid black; */
+      position:relative;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+  .Ahlan{
+      font-weight:900;
+      font-size: 2rem;
+      /* border: 1px solid black; */
+      transition: all 2s ease;
+      padding-top: 5%;
+      position: relative;
+      top:20px;
+  }
+  .First-Ahlan, .Second-Ahlan{
+          flex-wrap: wrap;
+          display: inline-block;
+      }
+  .text-under-ahlan{
+      font-weight: 900;
+      font-size: 1.2rem;
+      /* border: 1px solid black; */
+      transition: all 2s ease;
+  }
+  .Home-section-content-img{
+      left:5%;
+      width:50%;
+      /* border: 1px solid black; */
+      position:relative;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      transition: all 2s ease;
+  }
+  .img-me{
+      width: 45%;
+      padding:1%;
+      border-radius: 50%;
+
+      transition: all 2s ease;
+  }
+  .img-me:hover{
+      transform: scale(1.1);
+  }
+  /* Wrapper */
+  .wrapper{
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      /* bottom:20px; */
+      
+  }
+  .wrapper .static-txt{
+      color: black;
+      font-size: 1.2em;
+      font-weight: 400;
+      flex-wrap: wrap;
+  }
+  
+  .wrapper .dynamic-txts{
+      margin-left: -25px;
+      height: 90px;
+      overflow: hidden;
+  }
+  .dynamic-txts li{
+      text-align: left;
+      list-style: none;
+      color: #004E64;
+      font-size: 1.2em;
+      font-weight: 900;
+      position: relative;
+      top: 0;
+      animation: slide 12s steps(4) infinite;
+  }
+  .dynamic-txts li span{
+      position: relative;
+      margin: 5px 0;
+      line-height: 90px;
+  }
+  .dynamic-txts li span::after{
+      content: "";
+      padding:3px;
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: silver;
+      border-left: 2px solid #004E64;
+      animation: typing 3s steps(13) infinite;
+      top:-5px;
+  }
+ 
+  
+
+  /* End of wrapper */
+
+
+
+ 
