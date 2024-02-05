@@ -1,0 +1,95 @@
+
+
+
+
+body{
+    background-size: cover;
+   }
+
+  .profile img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    width: 50%;
+    border-radius: 50%;
+   }
+
+  .name{
+    font-size: 25px;
+    font-style: italic;
+    color:rgb(144, 145, 146);
+    font-family: 'Protest Riot', sans-serif;
+    text-align: center;
+    
+  }
+  
+  
+  .sidenav {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 20px;
+
+    }
+  
+  .sidenav a:hover, .dropdown-btn:hover {
+      color: #f1f1f1;
+    }
+
+  .sidenav a, .dropdown-btn {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      border: none;
+      background: none;
+      width:100%;
+      text-align: left;
+      cursor: pointer;
+      outline: none;
+    }
+
+
+    .active {
+      background-color: green;
+      color: white;
+    }
+
+
+    .bar{
+      margin-top: 20px ;
+
+    }
+
+
+     .social-links a {
+      font-size: 18px;
+      display: inline-block;
+      background: #212431;
+      color: #fff;
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 20%;
+      text-align: center;
+      width: 25px;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+    
+    .social-links a:hover {
+      background: #149ddd;
+      color: #fff;
+      text-decoration: none;
+    }
+ 
+
+
+    
