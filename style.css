@@ -227,6 +227,20 @@
       animation: typing 3s steps(13) infinite;
       top:-5px;
   }
+
+  .CV{
+    font-weight:900;
+    padding:10%;
+    text-wrap:nowrap;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    right:12px;
+    font-size: 1rem; 
+    transition: all 2s ease;
+    position: relative;
+    bottom:20px;
+    cursor:pointer;
+}
  
   
 
