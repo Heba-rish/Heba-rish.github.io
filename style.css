@@ -5,8 +5,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;  
-    width: 50%;
-    border-radius: 50%;
+    width: 120px;
+    border: 8px solid #2c2f3f;
+    border-radius: 60px;
    }
 
   .name{
