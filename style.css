@@ -1,268 +1,232 @@
-
-
-  .profile img {
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
-    width: 120px;
-    border: 8px solid #2c2f3f;
-    border-radius: 60px;
-   }
-
-  .name{
-    font-size: 25px;
-    font-style: italic;
-    color:rgb(144, 145, 146);
-    font-family: 'Protest Riot', sans-serif;
-    text-align: center;
-    
-  }
-  
-  
-  .sidenav {
-      height: 100%;
-      width: 200px;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      padding-top: 20px;
-
-    }
-  
-  .sidenav a:hover, .dropdown-btn:hover {
-      color: #f1f1f1;
-    }
-
-  .sidenav a, .dropdown-btn {
-      padding: 6px 8px 6px 16px;
-      text-decoration: none;
-      font-size: 20px;
-      color: #818181;
-      display: block;
-      border: none;
-      background: none;
-      width:100%;
-      text-align: left;
-      cursor: pointer;
-      outline: none;
-    }
-
-
-    .active {
-      background-color: green;
-      color: white;
-    }
-
-
-    .bar{
-      margin-top: 20px ;
-    }
-
-
-     .social-links a {
-      font-size: 18px;
-      display: inline-block;
-      background: #212431;
-      color: #fff;
-      line-height: 1;
-      padding: 8px 0;
-      margin-right: 4px;
-      border-radius: 20%;
-      text-align: center;
-      width: 25px;
-      margin-left: 20px;
-      transition: 0.3s;
-    }
-    
-    .social-links a:hover {
-      background: #149ddd;
-      color: #fff;
-      text-decoration: none;
-    }
- 
-
-    /*container covering all following sectoins*/
-    .sections-big-container{
-      width:100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      top:70px; /*seperate sections from navbar*/
-  }
-
-
-  /* Home section style */
-  .Home-section{
-      width:85%;
-      padding:2% 0%;
-      margin-left: 200px  ;
-      background-color:silver;
-      clip-path: polygon(0 0, 100% 0%, 100% 100%, 69% 88%, 0 100%);
-      position: relative;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      z-index: 7;
-      margin-bottom: -100px;
-  }
-
-  .Home-section-content{
-      width:80%;
-      margin:auto;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction:row;
-      /* border: 1px solid black; */
-      
-      /* purpose of the following is to avoid polygon edges */
-      padding: 4%;
-      bottom:30px;
-      transition: all 2s ease;
-      
-  }
-
-  .Home-section-content-text{
-      width:auto;
-      left:5%;
-      /* border: 1px solid black; */
-      position:relative;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-  }
-  .Ahlan{
-      font-weight:900;
-      font-size: 2rem;
-      /* border: 1px solid black; */
-      transition: all 2s ease;
-      padding-top: 5%;
-      position: relative;
-      top:20px;
-  }
-  .First-Ahlan, .Second-Ahlan{
-          flex-wrap: wrap;
-          display: inline-block;
-      }
-  .text-under-ahlan{
-      font-weight: 900;
-      font-size: 1.2rem;
-      /* border: 1px solid black; */
-      transition: all 2s ease;
-  }
-  .Home-section-content-img{
-      left:5%;
-      width:50%;
-      /* border: 1px solid black; */
-      position:relative;
-      justify-content: center;
-      align-items: center;
-      display: flex;
-      transition: all 2s ease;
-  }
-  .img-me{
-      width: 45%;
-      padding:1%;
-      border-radius: 50%;
-
-      transition: all 2s ease;
-  }
-  .img-me:hover{
-      transform: scale(1.1);
-  }
-  /* Wrapper */
-  .wrapper{
-      display: flex;
-      position: relative;
-      align-items: center;
-      justify-content: center;
-      /* bottom:20px; */
-      
-  }
-  .wrapper .static-txt{
-      color: black;
-      font-size: 1.2em;
-      font-weight: 400;
-      flex-wrap: wrap;
-  }
-  
-  .wrapper .dynamic-txts{
-      margin-left: -25px;
-      height: 90px;
-      overflow: hidden;
-  }
-  .dynamic-txts li{
-      text-align: left;
-      list-style: none;
-      color: #004E64;
-      font-size: 1.2em;
-      font-weight: 900;
-      position: relative;
-      top: 0;
-      animation: slide 12s steps(4) infinite;
-  }
-  @keyframes slide {
-    100%{
-        top: -360px;
-    }
-}
-  .dynamic-txts li span{
-      position: relative;
-      margin: 5px 0;
-      line-height: 90px;
-  }
-  .dynamic-txts li span::after{
-      content: "";
-      padding:3px;
-      position: absolute;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: silver;
-      border-left: 2px solid #004E64;
-      animation: typing 3s steps(13) infinite;
-      top:-5px;
-  }
-
-
-  @keyframes typing {
-    40%, 60%{
-        left: calc(100% + 30px);
-    }
-    100%{
-        left: 0;
-    }
+body {
+  background-color: antiquewhite;
 }
 
-  
-.CV{
-    font-weight:900;
-    padding:10%;
-    text-wrap:nowrap;
-    border-radius: 40px;
-    background-color: rgb(255, 255, 255);
-    right:12px;
-    font-size: 1rem; 
-    transition: all 2s ease;
-    position: relative;
-    bottom:20px;
-    cursor:pointer;
+.profile img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+  border: 8px solid #818181;
+  border-radius: 60px;
 }
- 
-  
 
-  /* End of wrapper */
+.sidenav .name {
+  font-size: 25px;
+  font-style: italic;
+  color: rgb(144, 145, 146);
+  font-family: "Protest Riot", sans-serif;
+  text-align: center;
+}
 
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
 
+.sidenav a:hover {
+  color: #f1f1f1;
+}
 
- 
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.bar {
+  margin-top: 20px;
+}
+
+.social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 20%;
+  text-align: center;
+  width: 25px;
+  margin-left: 20px;
+}
+
+.social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*container covering all following sectoins*/
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Home section style */
+.Home-section {
+  width: 85%;
+  padding: 2% 0%;
+  margin-left: 200px;
+  background-color: silver;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 69% 88%, 0 100%);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.Home-section-content {
+  width: 80%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* purpose of the following is to avoid polygon edges */
+  padding: 4%;
+  bottom: 30px;
+  transition: all 2s ease;
+}
+
+.Home-section-content-text {
+  width: auto;
+  left: 5%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.Ahlan {
+  font-weight: 900;
+  font-size: 2rem;
+  transition: all 2s ease;
+  padding-top: 5%;
+  position: relative;
+  top: 20px;
+}
+.First-Ahlan,
+.Second-Ahlan {
+  flex-wrap: wrap;
+  display: inline-block;
+}
+.text-under-ahlan {
+  font-weight: 900;
+  font-size: 1.2rem;
+  transition: all 2s ease;
+}
+.Home-section-content-img {
+  left: 5%;
+  width: 50%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: all 2s ease;
+}
+.img-me {
+  width: 45%;
+  padding: 1%;
+  border-radius: 50%;
+  transition: all 2s ease;
+}
+.img-me:hover {
+  transform: scale(1.1);
+}
+/* Wrapper */
+.wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .static-txt {
+  color: black;
+  font-size: 1.2em;
+  font-weight: 400;
+  flex-wrap: wrap;
+}
+
+.wrapper .dynamic-txts {
+  margin-left: -25px;
+  height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li {
+  text-align: left;
+  list-style: none;
+  color: #004e64;
+  font-size: 1.2em;
+  font-weight: 900;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after {
+  content: "";
+  padding: 3px;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: silver;
+  border-left: 2px solid #004e64;
+  animation: typing 3s steps(13) infinite;
+  top: -5px;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+/* End of wrapper */
+
+.CV {
+  font-weight: 900;
+  padding: 10%;
+  text-wrap: nowrap;
+  border-radius: 40px;
+  background-color: rgb(255, 255, 255);
+  right: 12px;
+  font-size: 1rem;
+  transition: all 2s ease;
+  position: relative;
+  bottom: 20px;
+  cursor: pointer;
+}
