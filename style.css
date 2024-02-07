@@ -84,13 +84,14 @@ body {
   width: 85%;
   padding: 2% 0%;
   margin-left: 200px;
-  background-color: silver;
+  background-color: #004e64;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 69% 88%, 0 100%);
   position: relative;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: row;
+  margin-bottom: -120px;
   z-index: 2;
 }
 
@@ -176,7 +177,7 @@ body {
 .dynamic-txts li {
   text-align: left;
   list-style: none;
-  color: #004e64;
+  color: #818181;
   font-size: 1.2em;
   font-weight: 900;
   position: relative;
@@ -200,7 +201,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: silver;
+  background: #004e64;
   border-left: 2px solid #004e64;
   animation: typing 3s steps(13) infinite;
   top: -5px;
@@ -222,11 +223,84 @@ body {
   padding: 10%;
   text-wrap: nowrap;
   border-radius: 40px;
-  background-color: rgb(255, 255, 255);
+  background-color: #065e77;
   right: 12px;
   font-size: 1rem;
   transition: all 2s ease;
   position: relative;
   bottom: 20px;
   cursor: pointer;
+}
+
+/*ABOUT TYLE */
+
+.About-section {
+  width: 85%;
+  padding: 2% 0%;
+  margin-left: 200px;
+
+  background-color: #25a18e;
+
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 35%,
+    100% 70%,
+    100% 92%,
+    71% 100%,
+    23% 85%,
+    0 93%,
+    0% 35%,
+    0 0
+  );
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -120px;
+  padding-top: 100px;
+  border: 10px #004e64;
+}
+
+.About-section-header {
+  font-weight: 900;
+  font-size: 2rem;
+  /* border: 1px solid black; */
+  transition: all 2s ease;
+  position: relative;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.About-section-content {
+  width: 95%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* purpose of the following is to avoid polygon edges */
+  padding-bottom: 5%;
+  bottom: 10px;
+  transition: all 2s ease;
+}
+
+.About-section-content-text {
+  width: 60%;
+  /* border: 1px solid black; */
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.About-text {
+  font-size: 1.2rem;
+  /* border: 1px solid black; */
+  transition: all 2s ease;
+  position: relative;
+  text-align: center;
 }
